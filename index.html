@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <br>
+        <!--navigation bar button-->
+        <div id="navButton">
+            <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="menu">
+        </div>
+
+        <!--navigation bar-->
+        <div id="nav" style="display: none">
+            <h3 id="rowStyle">Menu</h3>
+            <br>
+            <div id="navAudio" style="padding: 5px"><a href="#" style="text-decoration: none; color: whitesmoke;">Songs</a></div>
+            <br>
+            <div id="navVideo" style="padding: 5px"><a href="#videos" style="text-decoration: none; color: whitesmoke;">Video Preview</a></div>
+            <br>
+            <div id="navContact" style="padding: 5px"><a href="#contact" style="text-decoration: none; color: whitesmoke;">Subscription</a></div>
+            <br>
+            <div id="navContact" style="padding: 5px"><a href="#location" style="text-decoration: none; color: whitesmoke;">Location</a></div>
+        </div>
+
+        <br>
+
+        <h1 id="align-text-center-large" style="color:aliceblue" class="storeName">Orange myTunes</h1>
+    </header>
+
+    <br>
+    <br>
+
+    <!-- list of available songs-->
+    <section id="Audio">
+        <table id="tableStyle2"> 
+            <tr>
+                <td style="text-align: center;">Hits<br><div id="tableStyle" class="hover1"><img class="albumimg" src="assets/album5.jpg" alt="album5"></div></td>
+                <td style="text-align: center;">Melody<div id="tableStyle" class="hover2"><img class="albumimg" src="assets/album3.jpg" alt="album3"></div></td>
+                <td style="text-align: center;">Latest Songs<div id="tableStyle" class="hover3"><img  class="albumimg" src="assets/album2.jpg" alt="album2"></div></td>
+                <td><a href="#Audio"><img src="https://img.icons8.com/pastel-glyph/64/000000/forward.png" alt="more"/></a></td>
+            </tr>
+            <tr>
+                <td><div id="rowStyle" class="slide1" style="display: none;">
+                    <p>Thooriga-From Navarasa</p><p>Idhuvum Kadandhu Pogum</p><p>So Baby</p><p>Kannamma</p><p>Kutty Pattas</p><p>Rowdy Baby</p><p>Adi penne</p><p>Adipoli</p><p>Bujji</p><p>Nee Kavidhaigala</p>
+                </div></td>
+                <td><div id="rowStyle" class="slide2" style="display: none;">
+                    <p>Naalu Nimisham</p><p>Nenjame(From "Doctor")</p><p>Kaarkuzhal Kanmani</p><p>Pularaadha</p><p>The Life of Ram</p><p>Aval(From Manidhan)</p><p>Mogathirai</p><p>Maya Nadhi</p><p>Megamo Aval</p><p>Kannamma Kannamma</p>
+                </div></td>
+                <td><div id="rowStyle" class="slide3" style="display: none;">
+                    <p>Kannamma Eannamma</p><p>Talku Lessu Worku Moreu</p><p>Soul of Doctor</p><p>Manike Mage Hithe</p><p>Meherezylaa</p><p>Chellamma</p><p>Two Two Two</p><p>Enjoy Enjaami</p><p>Vambula Thumbula</p><p>Nethu</p>
+                </div></td>
+            </tr>
+        </table>
+    </section>
+
+    <br>
+    <br>
+
+    <!--preview videos-->
+    <section id="videos">
+        <h1 id="align-text-center-large">Video Preview</h1>
+        <div class="container">
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1" style="text-align: left; font-family: sans-serif;">Kadhale Kadhale Video Song</li>
+                <li class="tab-link" data-tab="tab-2"  style="text-align: left; font-family: sans-serif;">Naane Thaan Raja Video Song</li>
+                <li class="tab-link" data-tab="tab-3"  style="text-align: left; font-family: sans-serif;">Oxygen - Video Song</li>
+            </ul>
+        
+            <div id="tab-1" class="tab-content current" id="tableStyle2">
+                <iframe id="rowStyle" width="80%" height="300" src="https://www.youtube.com/embed/4HZN0XHfw88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="tab-2" class="tab-content" id="tableStyle2">
+                <iframe id="rowStyle" width="80%" height="300" src="https://www.youtube.com/embed/EKNibTXceGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="tab-3" class="tab-content" id="tableStyle2">
+                <iframe id="rowStyle" width="80%" height="300" src="https://www.youtube.com/embed/7M9hc_PC_Vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <!--contact us-->
+    <section id="contact">
+       <h1 id="align-text-center-large">Subscription - Contact Us</h1>
+       <form action="results.html" method="GET">
+           <table id="tableStyle">
+                <tr id="nameClick">
+                    <td id="rowStyle"><label for="name">Name</label></td>
+                </tr>
+                <tr>
+                    <td id="rowStyle" style="display: none;" class="nameSlide">
+                        <div class="nameSlide" style="display: none;"><input type="text" id="name" name="name"></div>
+                    </td>
+                </tr>
+                <tr id="phoneClick">
+                    <td id="rowStyle"><label for="phoneNumber">Phone Number</label></td>
+                </tr>
+                <tr>
+                    <td id="rowStyle" style="display: none;" class="phoneSlide">
+                        <div class="phoneSlide" style="display: none;"><input type="number" id="phoneNumber" name="phoneNumber"></div>
+                    </td>
+                </tr>
+                <tr id="emailClick">
+                    <td id="rowStyle"><label for="email">Email</label></td>
+                </tr>
+                <tr>
+                    <td id="rowStyle" style="display: none;" class="emailSlide">
+                        <div style="display: none;" class="emailSlide"><input type="email" id="email" name="email"></div>
+                    </td>
+                </tr>
+                <tr id="messageClick">
+                    <td id="rowStyle"><label for="message">Message</label></td>
+                </tr>
+                <tr>
+                    <td id="rowStyle" style="display: none;" class="messageSlide">
+                        <div style="display: none;" class="messageSlide"><textarea id="message" style="min-height: 140px;" name="message"></textarea></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="align-items: center;">
+                        <button>Send</button>
+                    </td>
+                </tr>
+           </table>
+       </form>
+    </section>
+
+    <br>
+
+    <!--google maps location-->
+    <section id="location">
+    <h1 id="align-text-center-large">Our Location</h1>
+    <div style="display: flex; align-items: center; flex-direction: column;">
+    <iframe width="250px" height="250px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no"></iframe><br>
+    </div>
+    </section>
+
+    <br>
+        <!-- Footer -->
+  <footer>
+    <div class="container1">
+      <div class="footer-cols">
+        <ul>
+          <li style="font-family: sans-serif;">Shop</li>
+          <li>
+            <a href="#">Music</a>
+          </li>
+          <li>
+            <a href="#">Movies</a>
+          </li>
+          <li>
+            <a href="#">Shows</a>
+          </li>
+          <li>
+            <a href="#">Apps</a>
+          </li>
+          <li>
+            <a href="#">Gift Cards</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li style="font-family: sans-serif;">Education & Business</li>
+          <li>
+            <a href="#">Education</a>
+          </li>
+          <li>
+            <a href="#">Shop For College</a>
+          </li>
+          <li>
+            <a href="#">Business</a>
+          </li>
+          <li>
+            <a href="#">Shop For Business</a>
+          </li>
+          <li>
+            <a href="#">Jobs</a>
+          </li>
+        </ul>
+        <ul>
+            <li style="font-family: sans-serif;">Contact</li>
+            <li>
+                <a href="#contact">Contact us</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      Copyright &copy; 2019 Orange myTunes
+    </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
